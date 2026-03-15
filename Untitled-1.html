@@ -10,6 +10,7 @@
     body{
 
         padding-top: 60px;
+        height: 3000px;
         
     }
 
@@ -35,13 +36,48 @@
         font-weight: bold;
     }
 
+    .galleria{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card{
+
+        background-color: beige;
+        width: 200px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+    }
+
+    .sticky{
+
+        position: sticky;
+        top: 60px;
+        background-color: aliceblue;
+        padding: 15px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        border-bottom: 3px solid #e6b800;
+        z-index: 100;
+    }
+
 </style>
 <body>
     <nav class="nav">
 
         <a href="#HOME">Home</a>
         <a href="#CORSI">Corsi</a>
-        <a href="CONTATTI">Contatti</a>
+        <a href="#CONTATTI">Contatti</a>
     </nav>
 
     <div class="content">
