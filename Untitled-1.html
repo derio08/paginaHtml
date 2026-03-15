@@ -7,6 +7,34 @@
 </head>
 <style>
 
+    body{
+
+        padding-top: 60px;
+        
+    }
+
+    .nav{
+
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 1000;
+    }
+
+    .nav a{
+
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
 </style>
 <body>
     <nav class="nav">
@@ -15,5 +43,20 @@
         <a href="#CORSI">Corsi</a>
         <a href="CONTATTI">Contatti</a>
     </nav>
+
+    <div class="content">
+        <h1>Benvenuti nella pagina web</h1>
+        <section id="CORSI" class="corsi">
+            <h2 class="sticky">I nostri corsi</h2>
+            <div class="galleria">
+                <div class="card">Arduino</div>
+                <div class="card">Web designer</div>
+                <div class="card">AI
+                    <span class="badge">Nuovo</span>
+                </div>
+                <div class="card">Networking</div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
